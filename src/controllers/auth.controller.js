@@ -80,6 +80,10 @@ exports.logout = async (req, res) => {
         if (user) {
             user.refreshTokenHash = undefined;
             await user.save();
+
+
+
+            //////////
         }
         } catch {}
     }
